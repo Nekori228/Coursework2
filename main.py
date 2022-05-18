@@ -3,9 +3,8 @@ import json
 import sqlite3
 
 app = Flask(__name__)
-db = sqlite3.connect("E://Kods//Kods//Coursework2//web.db", check_same_thread=False)
+db = sqlite3.connect("C:/Users/kalic/PycharmProjects/Coursework2/web.db", check_same_thread=False)
 cursor = db.cursor()
-
 
 @app.route("/")
 def about():
